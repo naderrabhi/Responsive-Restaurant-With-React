@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import images from '../../constants/images'
 import  SubHeading  from '../../components/SubHeading/SubHeading';
 import {BsInstagram,BsArrowLeftShort,BsArrowRightShort} from 'react-icons/bs'
@@ -7,7 +7,7 @@ import './Gallery.css';
 const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
 
 const Gallery = () => {
-  // const [first, setfirst] = useState(second)
+  
   const scrollRef = useRef(null)
 
   const scroll = (direction) => {

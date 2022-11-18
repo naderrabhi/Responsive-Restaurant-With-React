@@ -1,6 +1,6 @@
 import React from 'react';
 import images from '../../constants/images';
-import data from '../../constants/data';
+import {awards} from '../../constants/data';
 import SubHeading from '../../components/SubHeading/SubHeading'
 import './Laurels.css';
 
@@ -11,7 +11,7 @@ const Laurels = () => (
       <SubHeading title="Awards & recognition" />
       <h1 className="headtext__cormorant">Our Laurels</h1>
       <div className="app__laurels_awards">
-        {data.awards.map(award => (
+        {awards.map(award => (
           <div className="app__laurels_award-card">
           <img src={award.imgUrl} alt={award.title} />
           <div className="app__laurels_awards-card_content">
